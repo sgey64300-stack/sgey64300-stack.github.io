@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#08090b">
+    <title>ДЕКСТЕР — тёмный трибьют вселенной</title>
+    <meta name="description" content="Атмосферный неофициальный фан-сайт вселенной «Декстера»: персонажи, кодекс Гарри, психология, сезоны, цитаты и концепт-арты Майами.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2308090b'/><path d='M50 16c0 0-22 25-22 40a22 22 0 0 0 44 0C72 41 50 16 50 16Z' fill='%23a51224'/><path d='M42 54c0 8 5 14 13 16' stroke='%23e8e5df' stroke-width='4' fill='none' stroke-linecap='round'/></svg>">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <a class="brand" href="#top" aria-label="Декстер — на главную">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <path d="M20 4C20 4 8 17 8 25a12 12 0 0 0 24 0C32 17 20 4 20 4Z" fill="currentColor"/>
+                        <path d="M15 26c0 4 2.8 7 7 8" stroke="#08090b" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">DEXTER</span>
+                    <span class="brand-sub">tribute archive</span>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+                <a href="#morgan">Морган</a>
+                <a href="#psychology">Психология</a>
+                <a href="#seasons">Сезоны</a>
+                <a href="#characters">Персонажи</a>
+                <a href="#quotes">Цитаты</a>
+                <a href="#world">Мир</a>
+                <a href="#style">Стиль</a>
+            </nav>
+
+            <div class="header-actions">
+                <span class="age-badge" title="Сериал содержит темы насилия">18+</span>
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero" id="top" aria-label="Декстер — монстр, который убивает монстров">
+            <div class="hero-bg" aria-hidden="true">
+                <svg class="hero-skyline" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#05070a"/>
+                            <stop offset=".42" stop-color="#0a1420"/>
+                            <stop offset=".67" stop-color="#142330"/>
+                            <stop offset="1" stop-color="#071019"/>
+                        </linearGradient>
+                        <radialGradient id="heroGlow" cx=".72" cy=".36" r=".55">
+                            <stop offset="0" stop-color="#25465a" stop-opacity=".5"/>
+                            <stop offset=".5" stop-color="#122331" stop-opacity=".2"/>
+                            <stop offset="1" stop-color="#05070a" stop-opacity="0"/>
+                        </radialGradient>
+                        <linearGradient id="heroWater" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#08131d"/>
+                            <stop offset=".55" stop-color="#050b11"/>
+                            <stop offset="1" stop-color="#030507"/>
+                        </linearGradient>
+                        <linearGradient id="heroRed" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#c41e3a" stop-opacity=".8"/>
+                            <stop offset="1" stop-color="#8b0000" stop-opacity="0"/>
+                        </linearGradient>
+                        <filter id="heroBlur"><feGaussianBlur stdDeviation="18"/></filter>
+                        <filter id="heroGrain">
+                            <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/>
+                            <feColorMatrix type="saturate" values="0"/>
+                            <feComponentTransfer><feFuncA type="table" tableValues="0 .11"/></feComponentTransfer>
+                        </filter>
+                    </defs>
+                    <rect width="1600" height="900" fill="url(#heroSky)"/>
+                    <rect width="1600" height="900" fill="url(#heroGlow)"/>
+                    <circle cx="1180" cy="252" r="190" fill="#8ba7b7" opacity=".055" filter="url(#heroBlur)"/>
+                    <circle cx="1180" cy="252" r="52" fill="#b8c7cc" opacity=".12"/>
+                    <circle cx="1180" cy="252" r="39" fill="#c9d4d6" opacity=".09"/>
+                    <g fill="#0b1620" opacity=".85">
+                        <path d="M0 576h1600v324H0z"/>
+                        <path d="M64 540h44v110H64zM118 562h36v88h-36zM166 510h58v140h-58zM238 548h34v102h-34zM286 526h68v124h-68zM368 560h42v90h-42zM424 492h58v158h-58zM494 542h34v108h-34zM544 566h54v84h-54zM612 514h70v136h-70zM696 552h36v98h-36zM746 528h48v122h-48zM810 574h46v76h-46zM870 536h54v114h-54zM938 506h66v144h-66zM1018 558h34v92h-34zM1064 530h52v120h-52zM1130 566h40v84h-40zM1184 520h62v130h-62zM1260 548h42v102h-42zM1316 500h58v150h-58zM1388 562h36v88h-36zM1438 534h50v116h-50zM1502 570h40v80h-40zM1556 542h44v108h-44z"/>
+                    </g>
+                    <g fill="#18303f" opacity=".55">
+                        <path d="M178 532h12v118h-12zM198 548h12v102h-12zM312 542h16v108h-16zM450 508h14v142h-14zM628 528h16v122h-16zM892 550h12v100h-12zM954 524h18v126h-18zM1204 538h14v112h-14zM1332 518h16v132h-16z"/>
+                    </g>
+                    <g fill="#d9b36c" opacity=".32">
+                        <rect x="76" y="562" width="4" height="8"/><rect x="88" y="580" width="4" height="8"/><rect x="180" y="534" width="4" height="7"/><rect x="208" y="560" width="4" height="7"/><rect x="252" y="570" width="4" height="7"/><rect x="314" y="552" width="4" height="7"/><rect x="338" y="578" width="4" height="7"/><rect x="448" y="516" width="4" height="7"/><rect x="470" y="548" width="4" height="7"/><rect x="632" y="538" width="4" height="7"/><rect x="654" y="570" width="4" height="7"/><rect x="892" y="560" width="4" height="7"/><rect x="966" y="534" width="4" height="7"/><rect x="1214" y="548" width="4" height="7"/><rect x="1232" y="576" width="4" height="7"/><rect x="1342" y="530" width="4" height="7"/><rect x="1360" y="558" width="4" height="7"/>
+                    </g>
+                    <g fill="#c41e3a" opacity=".4">
+                        <rect x="300" y="592" width="3" height="3"/><rect x="332" y="608" width="2" height="2"/><rect x="560" y="600" width="2" height="2"/><rect x="946" y="596" width="3" height="3"/><rect x="1198" y="606" width="2" height="2"/><rect x="1310" y="594" width="2" height="2"/>
+                    </g>
+                    <rect y="610" width="1600" height="290" fill="url(#heroWater)"/>
+                    <g opacity=".32">
+                        <path d="M0 640h1600" stroke="#4b7183" stroke-width="1"/>
+                        <path d="M0 684h1600" stroke="#315160" stroke-width="1"/>
+                        <path d="M0 746h1600" stroke="#233d4a" stroke-width="1"/>
+                        <path d="M0 824h1600" stroke="#192d37" stroke-width="1"/>
+                    </g>
+                    <g opacity=".32">
+                        <path d="M1010 640h30v46h-30zM1080 640h12v72h-12zM1164 640h38v30h-38zM1240 640h8v92h-8zM1320 640h22v54h-22zM1410 640h14v40h-14zM920 640h8v34h-8zM1500 640h18v64h-18z" fill="#d6a85d" opacity=".55"/>
+                    </g>
+                    <g opacity=".18" fill="none" stroke="#89a8b6">
+                        <path d="M0 664c180-10 300 10 480 0s330 12 510 0 370 8 610 0"/>
+                        <path d="M0 700c140 8 260-8 430 0s350-10 530 0 360-8 640 0"/>
+                        <path d="M0 780c220 8 360-10 570 0s320-8 520 0 300-10 510 0"/>
+                    </g>
+                    <g fill="#05090c">
+                        <path d="M0 900V718c40-20 68-8 96-26 18 14 30 22 52 18 26-5 34 30 56 42 24 12 22 44 44 58 18 12 22 48 34 64 10 14 18 26 18 26z"/>
+                        <path d="M1600 900V676c-48 8-62 34-94 36-22 2-32 34-54 48-26 16-28 44-54 54-24 10-26 44-46 56-16 10-18 30-18 30z"/>
+                    </g>
+                    <g fill="#020405" opacity=".9">
+                        <path d="M108 900c-10-86 8-154 16-202 3-20 18-32 38-32 20 0 34 14 36 32 6 48 20 116 10 202z"/>
+                        <path d="M118 698c-24-32-58-50-96-60 48 2 84 18 106 44 8-28 24-54 48-76-18 28-28 56-30 88 28-14 58-18 90-14-34 8-62 24-82 48-20 24-30 48-32 72h-18c2-34 12-64 14-102z"/>
+                        <path d="M1440 900c-8-74 4-136 12-178 3-18 16-28 32-28s28 12 30 28c6 42 18 104 10 178z"/>
+                        <path d="M1456 714c-22-28-50-44-84-54 42 4 72 18 92 40 8-26 22-48 44-68-16 26-26 50-28 78 26-12 52-16 80-12-30 8-54 22-72 42-18 22-26 42-28 62h-16c2-28 10-54 12-88z"/>
+                    </g>
+                    <g fill="none" stroke="#9fb4bd" stroke-width="1" opacity=".18">
+                        <path d="M280 760c60-8 110 4 170 0M900 790c80-6 130 8 210 0M1280 744c50-4 92 4 142 0"/>
+                    </g>
+                    <rect width="1600" height="900" filter="url(#heroGrain)" opacity=".55"/>
+                    <rect x="0" y="0" width="1600" height="900" fill="url(#heroRed)" opacity=".05"/>
+                </svg>
+                <div class="hero-rain" id="heroRain"></div>
+                <div class="hero-vignette"></div>
+                <div class="hero-scan"></div>
+            </div>
+
+            <div class="hero-inner container">
+                <div class="hero-copy">
+                    <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> Неофициальный трибьют · Майами · 2006—2026</p>
+                    <h1 class="hero-title" data-parallax="0.08">ДЕКСТЕР</h1>
+                    <p class="hero-subtitle">Монстр, который убивает монстров</p>
+
+                    <blockquote class="hero-quote reveal">
+                        <span class="quote-mark" aria-hidden="true">“</span>
+                        <p>Я не монстр. Я просто на шаг впереди.</p>
+                        <cite>Декстер Морган · внутренний монолог</cite>
+                    </blockquote>
+
+                    <div class="hero-actions">
+                        <a class="button button--blood" href="#morgan">
+                            <span>Погрузиться</span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a class="button button--ghost" href="#characters">Открыть досье</a>
+                    </div>
+
+                    <dl class="hero-stats" aria-label="Ключевые цифры вселенной">
+                        <div><dt>8</dt><dd>сезонов оригинала</dd></div>
+                        <div><dt>96</dt><dd>серий</dd></div>
+                        <div><dt>4</dt><dd>эпохи истории</dd></div>
+                        <div><dt>1</dt><dd>кодекс</dd></div>
+                    </dl>
+                </div>
+
+                <div class="hero-portrait" aria-label="Стилизованный портрет Декстера Моргана">
+                    <div class="portrait-orbit" aria-hidden="true"></div>
+                    <div class="portrait-card">
+                        <div class="portrait-meta portrait-meta--top">
+                            <span>CASE FILE / 001</span>
+                            <span>MIAMI METRO</span>
+                        </div>
+                        <svg class="portrait-svg" viewBox="0 0 520 700" role="img" aria-labelledby="heroPortraitTitle">
+                            <title id="heroPortraitTitle">Стилизованная иллюстрация: мужчина 35–40 лет, тёмные волосы, холодный взгляд, тени на лице</title>
+                            <defs>
+                                <radialGradient id="hpBg" cx=".5" cy=".35" r=".8">
+                                    <stop offset="0" stop-color="#223342"/>
+                                    <stop offset=".58" stop-color="#0d1721"/>
+                                    <stop offset="1" stop-color="#05070a"/>
+                                </radialGradient>
+                                <linearGradient id="hpSkin" x1=".15" y1=".1" x2=".9" y2=".9">
+                                    <stop offset="0" stop-color="#c8a58b"/>
+                                    <stop offset=".35" stop-color="#a47c66"/>
+                                    <stop offset=".7" stop-color="#6e5043"/>
+                                    <stop offset="1" stop-color="#382821"/>
+                                </linearGradient>
+                                <linearGradient id="hpSkinLight" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0" stop-color="#e0c1a6" stop-opacity=".62"/>
+                                    <stop offset=".5" stop-color="#b58e74" stop-opacity=".08"/>
+                                    <stop offset="1" stop-color="#2a1c17" stop-opacity="0"/>
+                                </linearGradient>
+                                <linearGradient id="hpHair" x1=".2" y1="0" x2=".8" y2="1">
+                                    <stop offset="0" stop-color="#2a2320"/>
+                                    <stop offset=".5" stop-color="#15110f"/>
+                                    <stop offset="1" stop-color="#050505"/>
+                                </linearGradient>
+                                <linearGradient id="hpShirt" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0" stop-color="#20262a"/>
+                                    <stop offset=".5" stop-color="#0f1316"/>
+                                    <stop offset="1" stop-color="#050607"/>
+                                </linearGradient>
+                                <linearGradient id="hpEye" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0" stop-color="#a9c0c5"/>
+                                    <stop offset=".5" stop-color="#6d8a91"/>
+                                    <stop offset="1" stop-color="#26383d"/>
+                                </linearGradient>
+                                <filter id="hpGrain">
+                                    <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/>
+                                    <feColorMatrix type="saturate" values="0"/>
+                                    <feComponentTransfer><feFuncA type="table" tableValues="0 .12"/></feComponentTransfer>
+                                </filter>
+                                <filter id="hpSoft"><feGaussianBlur stdDeviation="14"/></filter>
+                                <clipPath id="hpClip"><rect x="18" y="18" width="484" height="664" rx="2"/></clipPath>
+                            </defs>
+                            <g clip-path="url(#hpClip)">
+                                <rect x="18" y="18" width="484" height="664" fill="url(#hpBg)"/>
+                                <circle cx="300" cy="232" r="176" fill="#5d7b89" opacity=".12" filter="url(#hpSoft)"/>
+                                <g opacity=".16" stroke="#8ba4ad" fill="none">
+                                    <path d="M18 168h484M18 334h484M18 500h484M152 18v664M330 18v664"/>
+                                </g>
+                                <g opacity=".16" fill="#c41e3a">
+                                    <circle cx="92" cy="86" r="2"/><circle cx="438" cy="116" r="1.5"/><circle cx="408" cy="586" r="2"/><circle cx="86" cy="618" r="1.5"/>
+                                </g>
+                                <path d="M58 682c10-132 74-194 164-214h78c92 20 152 82 164 214Z" fill="url(#hpShirt)"/>
+                                <path d="M205 456h110l14 88c-22 22-46 30-69 30s-47-8-69-30Z" fill="#5c4035"/>
+                                <path d="M210 456h100l8 70c-20 16-38 22-58 22s-38-6-58-22Z" fill="#7a5948"/>
+                                <path d="M126 234c0-104 54-166 134-166s134 62 134 166v78c0 110-56 184-134 194-78-10-134-84-134-194Z" fill="url(#hpSkin)"/>
+                                <path d="M126 234c0-104 54-166 134-166s134 62 134 166v78c0 110-56 184-134 194-78-10-134-84-134-194Z" fill="url(#hpSkinLight)"/>
+                                <path d="M130 256c-20-2-30 18-24 44 6 28 22 42 40 36Z" fill="#6d4d3f"/>
+                                <path d="M390 256c20-2 30 18 24 44-6 28-22 42-40 36Z" fill="#4a342c"/>
+                                <path d="M138 204c4-86 50-132 122-132 72 0 118 46 122 132-20-46-56-70-122-70s-102 24-122 70Z" fill="url(#hpHair)"/>
+                                <path d="M142 212c-4-56 18-98 44-120-8 26-10 48-6 72 22-34 46-52 78-60-16 18-26 38-28 62 22-18 44-28 70-32-18 18-28 38-30 62 18-10 34-14 50-12-20 20-32 44-34 74-10-30-26-50-52-62-30-14-66-8-92 16Z" fill="#1a1513"/>
+                                <path d="M170 224c18-18 42-28 72-30" stroke="#4d4038" stroke-width="2" opacity=".6" fill="none"/>
+                                <path d="M164 300c20-12 42-14 66-5" stroke="#231713" stroke-width="8" stroke-linecap="round" fill="none"/>
+                                <path d="M290 295c24-9 46-7 66 5" stroke="#231713" stroke-width="8" stroke-linecap="round" fill="none"/>
+                                <path d="M170 328c18-11 38-12 56-2-16 14-36 16-56 2Z" fill="#e3ddd2" opacity=".85"/>
+                                <path d="M294 326c18-10 38-9 56 2-20 14-40 12-56-2Z" fill="#d9d3c8" opacity=".8"/>
+                                <ellipse cx="198" cy="327" rx="9" ry="8" fill="url(#hpEye)"/>
+                                <ellipse cx="322" cy="327" rx="9" ry="8" fill="url(#hpEye)"/>
+                                <circle cx="198" cy="327" r="3.4" fill="#111b1e"/>
+                                <circle cx="322" cy="327" r="3.4" fill="#111b1e"/>
+                                <circle cx="196" cy="325" r="1.2" fill="#eef4f2" opacity=".8"/>
+                                <circle cx="320" cy="325" r="1.2" fill="#eef4f2" opacity=".8"/>
+                                <path d="M168 321c20-13 42-13 62-2M290 319c20-11 42-11 62 2" stroke="#2b1d18" stroke-width="3" stroke-linecap="round" fill="none"/>
+                                <path d="M258 318c-4 38-10 58-16 70 8 8 18 10 28 6" stroke="#583e33" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                <path d="M226 432c22 8 46 8 68 0-10 18-24 26-34 26s-24-8-34-26Z" fill="#3b2422"/>
+                                <path d="M234 444c18 4 34 4 52 0-8 10-18 14-26 14s-18-4-26-14Z" fill="#241414"/>
+                                <path d="M232 432c18-6 38-6 56 0" stroke="#2b1817" stroke-width="3" stroke-linecap="round" fill="none"/>
+                                <path d="M198 382c-12 8-20 18-22 32" stroke="#4d352c" stroke-width="3" opacity=".5" fill="none"/>
+                                <path d="M320 380c12 10 20 20 22 34" stroke="#2c1d18" stroke-width="3" opacity=".5" fill="none"/>
+                                <path d="M174 466c26 18 56 26 86 26s60-8 86-26l-8-10c-22 18-48 26-78 26s-56-8-78-26Z" fill="#2b1b18" opacity=".55"/>
+                                <path d="M130 508c38 0 72 16 96 44l34 40 34-40c24-28 58-44 96-44l-4-28c-54 4-96 28-126 64-30-36-72-60-126-64Z" fill="#0b0e10"/>
+                                <path d="M246 552l14 16 14-16-14-18Z" fill="#8e9291" opacity=".45"/>
+                                <path d="M62 676c24-94 82-142 154-160" stroke="#43505a" stroke-width="1" opacity=".35" fill="none"/>
+                                <rect x="18" y="18" width="484" height="664" filter="url(#hpGrain)" opacity=".8"/>
+                                <rect x="18" y="18" width="484" height="664" fill="url(#hpBg)" opacity=".05"/>
+                                <path d="M18 602c118 38 366 38 484 0v80H18Z" fill="#05070a" opacity=".72"/>
+                            </g>
+                            <rect x="18" y="18" width="484" height="664" fill="none" stroke="#8a9aa2" stroke-opacity=".18"/>
+                        </svg>
+                        <div class="portrait-meta portrait-meta--bottom">
+                            <span>ДЕКСТЕР МОРГАН</span>
+                            <span>стилизованная иллюстрация</span>
+                        </div>
+                        <span class="portrait-stamp">DARK<br>PASSENGER</span>
+                    </div>
+                    <div class="portrait-note portrait-note--left">кровь как информация</div>
+                    <div class="portrait-note portrait-note--right">Майами · 25.7°N</div>
+                </div>
+            </div>
+
+            <a class="scroll-cue" href="#manifesto" aria-label="Прокрутить вниз">
+                <span class="scroll-cue-line"></span>
+                <span>листайте</span>
+            </a>
+        </section>
+
+        <!-- MANIFESTO STRIP -->
+        <section class="manifesto" id="manifesto" aria-label="Манифест">
+            <div class="container manifesto-inner reveal">
+                <p class="manifesto-kicker">Главное противоречие</p>
+                <p class="manifesto-text">Днём он собирает доказательства. Ночью — выносит приговор. Между этими двумя жизнями — дом, семья и человек, который очень старается не быть тем, кем является.</p>
+                <div class="manifesto-tags" aria-label="Темы проекта">
+                    <span>нуар</span><span>судебная медицина</span><span>пригород</span><span>двойная жизнь</span><span>кодекс</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHO IS DEXTER -->
+        <section class="section morgan" id="morgan">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-index">01 / человек за стеклом</p>
+                    <h2 class="section-title">Кто такой <em>Декстер Морган</em></h2>
+                    <p class="section-lead">Судебный эксперт по брызгам крови. Любящий брат. Осторожный отец. Человек, который научился говорить «доброе утро» ровно столько раз, сколько нужно, чтобы его перестали замечать.</p>
+                </div>
+
+                <div class="morgan-grid">
+                    <div class="morgan-visual reveal">
+                        <figure class="editorial-figure">
+                            <div class="editorial-art" data-portrait="dexter-large" aria-label="Фотография Майкла С. Холла"></div>
+                            <figcaption>
+                                <span>Декстер Морган · судебный эксперт</span>
+                                <span class="fig-note">фото · Wikimedia Commons</span>
+                            </figcaption>
+                        </figure>
+                        <div class="evidence-tape" aria-hidden="true">MIAMI METRO · FORENSIC SERVICES · BLOOD SPATTER</div>
+                        <div class="visual-caption">
+                            <span class="caption-number">01</span>
+                            <p>Он читает кровь как биографию. Капля на стене — это не грязь, а направление, сила и время. Единственный язык, который никогда не лжёт.</p>
+                        </div>
+                    </div>
+
+                    <div class="morgan-copy">
+                        <div class="copy-block reveal">
+                            <h3>Две жизни, одна тишина</h3>
+                            <p>В департаменте полиции Майами Декстера ценят за аккуратность и редкое умение замечать то, что пропускают другие. Он приезжает на места преступлений с чемоданом инструментов, говорит спокойно и никогда не повышает голос. Коллеги считают его странным, но полезным. Это его устраивает.</p>
+                            <p>Ночью всё меняется. Тёмный попутчик просыпается, и Декстер становится охотником. Его цель — не случайные люди, а те, кого он считает виновными: убийцы, насильники, те, кто избежал наказания. Он не называет это справедливостью. Он называет это необходимостью.</p>
+                        </div>
+
+                        <div class="copy-block reveal">
+                            <h3>Откуда пришёл Тёмный попутчик</h3>
+                            <p>Гарри Морган, детектив Майами, нашёл трёхлетнего Декстера в контейнере, где погибла его мать. Мальчик провёл рядом с телом несколько дней. То, что осталось после этого, Декстер позже назовёт Тёмным попутчиком — не демоном и не голосом извне, а частью себя, которую невозможно вырезать.</p>
+                            <p>Гарри не стал искать лечение. Он выбрал инструкцию. Так появился кодекс: убивай только тех, чья вина доказана; не причиняй вреда невинным; не попадайся. Кодекс не сделал Декстера хорошим человеком. Он сделал его управляемым — и дал ему иллюзию контроля.</p>
+                        </div>
+
+                        <div class="copy-block reveal">
+                            <h3>Человек, который хотел быть человеком</h3>
+                            <p>Рита, дети, работа, ужины на заднем дворе — всё это Декстер примеряет на себя, как чужой костюм. Сначала это игра в нормальность. Потом — привычка. Потом — нечто большее, что он не решается назвать любовью, потому что не уверен, что умеет чувствовать.</p>
+                            <p>Главный конфликт Декстера не в том, поймают ли его. Главный конфликт — в том, может ли человек, выросший рядом с монстром внутри, стать достаточно человечным, чтобы не разрушить тех, кто рядом. Сериал не даёт простого ответа. Он даёт наблюдение.</p>
+                        </div>
+
+                        <div class="codex-card reveal">
+                            <div class="codex-head">
+                                <span class="codex-mark" aria-hidden="true">
+                                    <svg viewBox="0 0 44 44" fill="none"><path d="M22 5 37 13v18L22 39 7 31V13Z" stroke="currentColor" stroke-width="1.2"/><path d="M22 13v18M15 18l14 8M29 18l-14 8" stroke="currentColor" stroke-width="1.2"/></svg>
+                                </span>
+                                <div>
+                                    <p class="codex-kicker">основные правила</p>
+                                    <h3>Кодекс Гарри</h3>
+                                </div>
+                            </div>
+                            <ol class="codex-list">
+                                <li><span>01</span><p><strong>Не убивай невинных.</strong> Вина должна быть доказана — не предполагаема, не удобна, не выгодна.</p></li>
+                                <li><span>02</span><p><strong>Убивай только тех, кто заслужил.</strong> Ритуал начинается не с ножа, а с досье.</p></li>
+                                <li><span>03</span><p><strong>Не попадайся.</strong> Контроль важнее удовольствия. Всегда.</p></li>
+                                <li><span>04</span><p><strong>Не оставляй следов.</strong> Ни физических, ни эмоциональных. Особенно эмоциональных.</p></li>
+                            </ol>
+                            <p class="codex-note">Кодекс — не мораль. Это клетка, которую Декстер добровольно носит, чтобы не стать тем, чего боится больше всего.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="monologue reveal">
+                    <div class="monologue-head">
+                        <span class="monologue-label">внутренний монолог</span>
+                        <span class="monologue-rule"></span>
+                        <span class="monologue-label">06:14 · Майами</span>
+                    </div>
+                    <div class="monologue-body">
+                        <p>Майами просыпается рано. В шесть утра воздух уже липкий, как старая плёнка, а газоны пахнут влажной землёй и скошенной травой. Я люблю это время. Город ещё не решил, кем ему быть сегодня, — и я тоже.</p>
+                        <p>На работе я говорю «доброе утро» ровно столько раз, сколько нужно, чтобы меня перестали замечать. Люди принимают тишину за скромность. Мне это удобно. В лаборатории кровь рассказывает мне больше, чем большинство моих коллег может сказать словами.</p>
+                        <p>Вечером я возвращаюсь домой, где меня ждут ужин, разговоры и чужая нормальность, которую я ношу, как хорошо сшитый костюм. Иногда он сидит идеально. Иногда жмёт. Но я давно понял: если достаточно долго играть человека, начинаешь помнить его привычки. Вопрос лишь в том, достаточно ли этого, чтобы стать им.</p>
+                    </div>
+                    <div class="monologue-foot">
+                        <span>оригинальный текст в стиле персонажа</span>
+                        <span>не цитата из сериала</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PSYCHOLOGY -->
+        <section class="section psychology" id="psychology">
+            <div class="container">
+                <div class="section-heading section-heading--split reveal">
+                    <div>
+                        <p class="section-index">02 / язык внутри</p>
+                        <h2 class="section-title">Психология <em>Тёмного попутчика</em></h2>
+                    </div>
+                    <p class="section-lead">«Декстер» не ставит диагноз. Он показывает, как человек собирает себя из правил, ритуалов и чужих ожиданий — и что происходит, когда конструкция начинает трескаться.</p>
+                </div>
+
+                <div class="psych-grid">
+                    <article class="psych-card reveal">
+                        <div class="psych-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6c0 0-13 14-13 24a13 13 0 0 0 26 0C37 20 24 6 24 6Z" stroke="currentColor" stroke-width="1.2"/><path d="M18 31c0 5 3 8 8 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                        <p class="psych-number">01</p>
+                        <h3>Тёмный попутчик</h3>
+                        <p class="psych-en">Dark Passenger</p>
+                        <p>Внутреннее влечение, которое Декстер ощущает как отдельную сущность. Не оправдание и не второй человек внутри — скорее способ говорить о том, что не помещается в слова.</p>
+                    </article>
+                    <article class="psych-card reveal">
+                        <div class="psych-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 5 39 13v19L24 43 9 32V13Z" stroke="currentColor" stroke-width="1.2"/><path d="M24 14v18M17 19l14 8M31 19l-14 8" stroke="currentColor" stroke-width="1.2"/></svg></div>
+                        <p class="psych-number">02</p>
+                        <h3>Кодекс Гарри</h3>
+                        <p class="psych-en">Harry's Code</p>
+                        <p>Система правил, превращающая хаос в ритуал. Она защищает невинных, но одновременно запирает Декстера в роли, которую он не выбирал.</p>
+                    </article>
+                    <article class="psych-card reveal">
+                        <div class="psych-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="7" y="8" width="14" height="14" stroke="currentColor" stroke-width="1.2"/><rect x="27" y="8" width="14" height="14" stroke="currentColor" stroke-width="1.2"/><rect x="7" y="28" width="14" height="12" stroke="currentColor" stroke-width="1.2"/><rect x="27" y="28" width="14" height="12" stroke="currentColor" stroke-width="1.2"/></svg></div>
+                        <p class="psych-number">03</p>
+                        <h3>Компартментализация</h3>
+                        <p class="psych-en">Compartmentalization</p>
+                        <p>Способ разложить жизнь по закрытым отсекам: работа, семья, ночь. Чем аккуратнее отсеки, тем меньше они соприкасаются — и тем страшнее, когда граница исчезает.</p>
+                    </article>
+                    <article class="psych-card reveal">
+                        <div class="psych-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 7c8 0 14 5 14 12 0 5-3 8-6 11l2 11H14l2-11c-3-3-6-6-6-11 0-7 6-12 14-12Z" stroke="currentColor" stroke-width="1.2"/><path d="M18 25c2 2 4 3 6 3s4-1 6-3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                        <p class="psych-number">04</p>
+                        <h3>Маска нормальности</h3>
+                        <p class="psych-en">Mask of Normalcy</p>
+                        <p>Социальная мимикрия: правильные слова, уместные паузы, вежливая улыбка. Декстер изучает людей, чтобы не выделяться. Со временем маска становится не только защитой, но и частью личности.</p>
+                    </article>
+                    <article class="psych-card reveal">
+                        <div class="psych-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M10 38V10h20l8 8v20Z" stroke="currentColor" stroke-width="1.2"/><path d="M30 10v8h8M17 24h14M17 30h9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                        <p class="psych-number">05</p>
+                        <h3>Ритуал убийства</h3>
+                        <p class="psych-en">The Ritual</p>
+                        <p>Подготовка, комната, плёнка, признание, прощание. Ритуал даёт Декстеру чувство порядка и контроля. Но чем важнее ритуал, тем сильнее он подчиняет себе человека.</p>
+                    </article>
+                    <article class="psych-card reveal">
+                        <div class="psych-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 39s-14-8-14-19a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 11-14 19-14 19Z" stroke="currentColor" stroke-width="1.2"/><path d="M20 20c0 4 2 7 6 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                        <p class="psych-number">06</p>
+                        <h3>Эмпатия как инструмент</h3>
+                        <p class="psych-en">Empathy as a Tool</p>
+                        <p>Декстер умеет читать чужие эмоции, но не всегда их чувствует. Эмпатия для него — навык наблюдения. Однако настоящие привязанности постепенно размывают границу между симуляцией и переживанием.</p>
+                    </article>
+                    <article class="psych-card reveal">
+                        <div class="psych-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="1.2"/><path d="m28 28 11 11M15 20c2-3 4-4 5-4s3 1 5 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+                        <p class="psych-number">07</p>
+                        <h3>Наблюдение vs. участие</h3>
+                        <p class="psych-en">Observer vs. Participant</p>
+                        <p>Декстер предпочитает смотреть, а не быть. Но жизнь требует участия: любить, ошибаться, терять. Чем ближе он подходит к людям, тем меньше остаётся наблюдателем — и тем уязвимее становится.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEASONS -->
+        <section class="section seasons" id="seasons">
+            <div class="container">
+                <div class="section-heading section-heading--split reveal">
+                    <div>
+                        <p class="section-index">03 / хронология тьмы</p>
+                        <h2 class="section-title">Сезоны и <em>эпохи</em></h2>
+                    </div>
+                    <p class="section-lead">Восемь сезонов оригинала, три продолжения и один приквел. Без спойлеров ключевых поворотов — только настроение, антагонисты и то, как менялся Декстер.</p>
+                </div>
+
+                <div class="season-filters reveal" role="group" aria-label="Фильтр сезонов">
+                    <button type="button" class="chip is-active" data-era="all">Все эпохи</button>
+                    <button type="button" class="chip" data-era="original">Оригинал</button>
+                    <button type="button" class="chip" data-era="newblood">New Blood</button>
+                    <button type="button" class="chip" data-era="originalsin">Original Sin</button>
+                    <button type="button" class="chip" data-era="resurrection">Resurrection</button>
+                </div>
+
+                <div class="season-list" id="seasonList"></div>
+
+                <div class="season-footnote reveal">
+                    <span class="footnote-mark">i</span>
+                    <p>Данные актуальны на ноябрь 2026 года. «Dexter: Resurrection» продлён на второй сезон; на момент публикации вышла часть эпизодов. Сайт не раскрывает ключевые повороты сюжета.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHARACTERS -->
+        <section class="section characters" id="characters">
+            <div class="container">
+                <div class="section-heading section-heading--split reveal">
+                    <div>
+                        <p class="section-index">04 / лица и маски</p>
+                        <h2 class="section-title">Персонажи <em>вселенной</em></h2>
+                    </div>
+                    <p class="section-lead">Каждый здесь носит свою маску. Одни — чтобы выжить. Другие — чтобы быть принятыми. Третьи — чтобы никто не заметил, что маски нет.</p>
+                </div>
+
+                <div class="character-toolbar reveal">
+                    <div class="character-filters" role="group" aria-label="Фильтр персонажей">
+                        <button type="button" class="chip is-active" data-filter="all">Все</button>
+                        <button type="button" class="chip" data-filter="family">Семья</button>
+                        <button type="button" class="chip" data-filter="police">Полиция</button>
+                        <button type="button" class="chip" data-filter="antagonist">Антагонисты</button>
+                        <button type="button" class="chip" data-filter="later">Поздние сезоны</button>
+                    </div>
+                    <p class="toolbar-note"><span id="characterCount">19</span> досье · нажмите на карточку, чтобы открыть профиль</p>
+                </div>
+
+                <div class="character-grid" id="characterGrid"></div>
+            </div>
+        </section>
+
+        <!-- QUOTES -->
+        <section class="section quotes" id="quotes">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-index">05 / голоса</p>
+                    <h2 class="section-title">То, что остаётся <em>после тишины</em></h2>
+                    <p class="section-lead">Оригинальные реплики в духе персонажей — не цитаты из сценария. Короткие фразы, в которых слышится голос сериала.</p>
+                </div>
+
+                <div class="quote-feature reveal">
+                    <span class="quote-feature-mark" aria-hidden="true">“</span>
+                    <blockquote>
+                        <p>Кровь никогда не врёт. Врут люди — и ещё больше врут те, кто боится её прочитать.</p>
+                        <footer><span>Декстер Морган</span><span>о работе и о себе</span></footer>
+                    </blockquote>
+                    <div class="quote-feature-line" aria-hidden="true"></div>
+                </div>
+
+                <div class="quote-grid" id="quoteGrid"></div>
+            </div>
+        </section>
+
+        <!-- WORLD -->
+        <section class="section world" id="world">
+            <div class="container">
+                <div class="section-heading section-heading--split reveal">
+                    <div>
+                        <p class="section-index">06 / география</p>
+                        <h2 class="section-title">Мир <em>Декстера</em></h2>
+                    </div>
+                    <p class="section-lead">Майами здесь не фон, а соучастник. Тёплый воздух, ночные огни, пластиковые шторы и вода, которая забирает всё лишнее.</p>
+                </div>
+
+                <div class="world-gallery" id="worldGallery"></div>
+
+                <div class="world-note reveal">
+                    <span>Портреты персонажей — фотографии актёров с Wikimedia Commons под свободными лицензиями. Сцены и локации — оригинальные векторные концепт-арты, созданные для этого неофициального проекта.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL STYLE -->
+        <section class="section visual-style" id="style">
+            <div class="container">
+                <div class="section-heading section-heading--split reveal">
+                    <div>
+                        <p class="section-index">07 / визуальный код</p>
+                        <h2 class="section-title">Эстетика <em>тихой тьмы</em></h2>
+                    </div>
+                    <p class="section-lead">Никакого дешёвого трэша. Только холодный свет, аккуратная типографика и ощущение, что за кадром кто-то очень внимательно наблюдает.</p>
+                </div>
+
+                <div class="style-grid">
+                    <article class="style-card reveal">
+                        <p class="style-number">01</p>
+                        <h3>Палитра</h3>
+                        <p>Глубокий чёрный, ночной синий и сдержанный кровавый акцент. Красный здесь — не украшение, а сигнал: его всегда мало.</p>
+                        <div class="style-swatches" aria-label="Основная палитра проекта">
+                            <span style="--swatch:#08090b"><i></i>#08090B</span>
+                            <span style="--swatch:#0d1b2a"><i></i>#0D1B2A</span>
+                            <span style="--swatch:#8b0000"><i></i>#8B0000</span>
+                            <span style="--swatch:#c41e3a"><i></i>#C41E3A</span>
+                            <span style="--swatch:#e9e5de"><i></i>#E9E5DE</span>
+                        </div>
+                    </article>
+
+                    <article class="style-card reveal">
+                        <p class="style-number">02</p>
+                        <h3>Типографика</h3>
+                        <p>Строгий гротеск для заголовков и структуры. Курсивный антиквенный шрифт — для цитат, в которых слышится чуть больше, чем сказано.</p>
+                        <div class="style-type" aria-hidden="true">
+                            <span class="style-type-display">ДЕКСТЕР</span>
+                            <span class="style-type-quote">«Тьма не приходит извне»</span>
+                            <span class="style-type-mono">CASE FILE / 001</span>
+                        </div>
+                    </article>
+
+                    <article class="style-card reveal">
+                        <p class="style-number">03</p>
+                        <h3>Текстура</h3>
+                        <p>Зерно старой плёнки, тонкая сетка, пластиковые шторы и отражения на воде. Фактура важнее эффекта: она делает тишину осязаемой.</p>
+                        <div class="style-texture" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </article>
+
+                    <article class="style-card reveal">
+                        <p class="style-number">04</p>
+                        <h3>Движение</h3>
+                        <p>Медленные появления, лёгкий параллакс, дождь на первом экране. Анимация не отвлекает — она задаёт темп наблюдения.</p>
+                        <div class="style-motion" aria-hidden="true">
+                            <span class="style-motion-line"></span>
+                            <span class="style-motion-dot"></span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="style-note reveal">
+                    <span class="style-note-mark" aria-hidden="true">
+                        <svg viewBox="0 0 40 40" fill="none"><path d="M20 5C20 5 9 18 9 25a11 11 0 0 0 22 0C31 18 20 5 20 5Z" stroke="currentColor" stroke-width="1.1"/><path d="M15 26c0 4 2.6 6.5 6 7.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+                    </span>
+                    <p>Портреты — свободные фотографии актёров с Wikimedia Commons (авторы и лицензии указаны в футере). Сцены и локации — оригинальные векторные концепт-арты, созданные для этого проекта. Кадры сериала и официальные постеры не используются.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLOSING -->
+        <section class="closing" aria-label="Финальная цитата">
+            <div class="closing-bg" aria-hidden="true"></div>
+            <div class="container closing-inner reveal">
+                <p class="closing-kicker">вопрос без ответа</p>
+                <p class="closing-quote">«Если ты достаточно долго притворяешься человеком,<br><em>кем ты просыпаешься утром?</em>»</p>
+                <a class="button button--ghost" href="#top">Вернуться к началу</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="#top" aria-label="Декстер — на главную">
+                    <span class="brand-mark" aria-hidden="true">
+                        <svg viewBox="0 0 40 40" fill="none"><path d="M20 4C20 4 8 17 8 25a12 12 0 0 0 24 0C32 17 20 4 20 4Z" fill="currentColor"/><path d="M15 26c0 4 2.8 7 7 8" stroke="#08090b" stroke-width="2.2" stroke-linecap="round"/></svg>
+                    </span>
+                    <span class="brand-text"><span class="brand-name">DEXTER</span><span class="brand-sub">tribute archive</span></span>
+                </a>
+                <p>Тёмный, наблюдательный и уважительный взгляд на вселенную «Декстера». Сделано фанатами для фанатов.</p>
+                <p class="footer-mark">Miami · 25.7°N · 80.2°W</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="#morgan">Декстер Морган</a></li>
+                        <li><a href="#psychology">Психология</a></li>
+                        <li><a href="#seasons">Сезоны</a></li>
+                        <li><a href="#characters">Персонажи</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Ещё</h4>
+                    <ul>
+                        <li><a href="#quotes">Цитаты</a></li>
+                        <li><a href="#world">Мир</a></li>
+                        <li><a href="#style">Визуальный стиль</a></li>
+                        <li><a href="#top">Наверх</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-disclaimer">
+                <span class="disclaimer-label">Дисклеймер</span>
+                <p>Фан-сайт. Неофициальный трибьют. Все права на персонажей и историю принадлежат правообладателям. Иллюстрации — стилизованные AI-концепт-арты, фотографии — с Wikimedia Commons под свободными лицензиями.</p>
+                <p class="footer-age">18+ · Сериал содержит темы насилия. Сайт не является официальным продуктом Showtime / Paramount.</p>
+            </div>
+        </div>
+        <div class="container footer-credits">
+            <details class="photo-credits">
+                <summary>Фотографии актёров · Wikimedia Commons</summary>
+                <ul id="photoCredits"></ul>
+                <p>Фотографии используются по лицензиям Creative Commons, указанным рядом с каждой работой. Полные описания, авторы и условия — на страницах файлов по ссылкам. Сайт некоммерческий.</p>
+            </details>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <span>© 2026 Dexter Tribute Archive</span>
+                <span>некоммерческий фан-проект</span>
+                <button type="button" class="back-to-top" id="backToTop">Наверх <span aria-hidden="true">↑</span></button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Character dialog -->
+    <dialog class="dossier-dialog" id="characterDialog" aria-labelledby="dialogName">
+        <div class="dialog-inner">
+            <button class="dialog-close" type="button" data-close-dialog aria-label="Закрыть досье">✕</button>
+            <div class="dialog-art" id="dialogArt"></div>
+            <div class="dialog-content">
+                <p class="dialog-kicker" id="dialogKicker">досье</p>
+                <h3 id="dialogName">Имя</h3>
+                <p class="dialog-role" id="dialogRole">Роль</p>
+                <p class="dialog-credit" id="dialogCredit"></p>
+                <div class="dialog-tags" id="dialogTags"></div>
+                <div class="dialog-block">
+                    <h4>Кто это</h4>
+                    <p id="dialogWho"></p>
+                </div>
+                <div class="dialog-block">
+                    <h4>Характер и мотивация</h4>
+                    <p id="dialogCharacter"></p>
+                </div>
+                <div class="dialog-block">
+                    <h4>Связь с Декстером</h4>
+                    <p id="dialogRelationship"></p>
+                </div>
+                <div class="dialog-block">
+                    <h4>Психологический профиль</h4>
+                    <p id="dialogPsych"></p>
+                </div>
+                <blockquote class="dialog-philosophy" id="dialogPhilosophy"></blockquote>
+                <p class="dialog-note" id="dialogNote">Фото актёра · оригинальный текст проекта</p>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Art lightbox -->
+    <dialog class="art-dialog" id="artDialog" aria-labelledby="artDialogTitle">
+        <div class="art-dialog-inner">
+            <button class="dialog-close" type="button" data-close-art aria-label="Закрыть изображение">✕</button>
+            <div class="art-dialog-visual" id="artDialogVisual"></div>
+            <div class="art-dialog-caption">
+                <div>
+                    <p class="dialog-kicker">концепт-арт</p>
+                    <h3 id="artDialogTitle">Локация</h3>
+                </div>
+                <p id="artDialogText"></p>
+            </div>
+        </div>
+    </dialog>
+
+    <noscript>
+        <div class="noscript">Для интерактивных разделов сайта нужен JavaScript. Основная атмосфера и текст остаются доступными.</div>
+    </noscript>
+
+    <script src="js/portraits.js"></script>
+    <script src="js/scenes.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
